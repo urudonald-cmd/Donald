@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ==========================
    Portfolio - style.css
    Matches the provided HTML layout / screenshot
@@ -610,4 +611,256 @@ footer{
   .about-left img{ width:180px; height:180px }
   .primary-btn{ padding:10px 14px }
   .portfolio-card img, .blog-card img{ height:140px }
+=======
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #111;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 100px 50px 50px;
+}
+
+/* Home */
+.home-section {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #f39c12;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #e67e22;
+}
+
+/* About */
+.about-section .container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-left img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.about-right h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-right p {
+  font-size: 1rem;
+}
+
+/* Process */
+.process-steps {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1 1 calc(25% - 30px);
+  text-align: center;
+}
+
+.step i {
+  font-size: 2rem;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  margin-bottom: 10px;
+}
+
+/* Portfolio */
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex: 1 1 calc(33% - 20px);
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+}
+
+/* Blog */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-card h3 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.blog-card h3 a:hover {
+  color: #f39c12;
+}
+
+/* Services */
+.services-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 calc(25% - 30px);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+
+.service-card i {
+  font-size: 2rem;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-section textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .about-section .container {
+    flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .services-list {
+    flex-direction: column;
+  }
+
+  .process-steps {
+    flex-direction: column;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+>>>>>>> d7ee8cf044d00add190b4747e5610615700998b2
 }
